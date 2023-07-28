@@ -31,12 +31,8 @@ void Trick::MonteCarlo::initialize_slave(Trick::MonteSlave* slave_to_init) {
         slave_to_init->remote_shell_args = "";
     }
     std::string buffer;
-    if (verbosity >= MC_INFORMATIONAL) {
-        message_publish(MSG_INFO, "Monte: Status of custom_slave_dispatch, custom_pre_text, and custom_post_text %d:%s:%s",
-                        custom_slave_dispatch, custom_pre_text, custom_post_text) ;
-    }
     /** <li> If this is a custom slave dispatch: add the #custom_pre_text. */
-    if (custom_slave_dispatch) {
+    if (custom_slave_dispatch_pre_text) {
         buffer = custom_pre_text;
     /** <li> Otherwise add the default pre text.     */
     } else {
@@ -62,7 +58,7 @@ void Trick::MonteCarlo::initialize_slave(Trick::MonteSlave* slave_to_init) {
     }
 
     /** <li> if this is a custom slave dispatch, append the #custom_post_text. */
-    if (custom_slave_dispatch) {
+    if (custom_slave_dispatch_post_text) {
         buffer += custom_post_text;
     } else {
         buffer += std::string("' &");

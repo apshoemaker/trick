@@ -57,6 +57,22 @@ bool Trick::MonteCarlo::get_custom_slave_dispatch() {
     return custom_slave_dispatch;
 }
 
+void Trick::MonteCarlo::set_custom_slave_dispatch_pre_text(bool in_custom_slave_dispatch_pre_text) {
+    this->custom_slave_dispatch_pre_text = in_custom_slave_dispatch_pre_text;
+}
+
+bool Trick::MonteCarlo::get_custom_slave_dispatch_pre_text() {
+    return custom_slave_dispatch_pre_text;
+}
+
+void Trick::MonteCarlo::set_custom_slave_dispatch_post_text(bool in_custom_slave_dispatch_post_text) {
+    this->custom_slave_dispatch_post_text = in_custom_slave_dispatch_post_text;
+}
+
+bool Trick::MonteCarlo::get_custom_slave_dispatch_post_text() {
+    return custom_slave_dispatch_post_text;
+}
+
 void Trick::MonteCarlo::set_timeout(double in_timeout) {
     this->timeout = in_timeout;
 }

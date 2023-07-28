@@ -67,6 +67,30 @@ int mc_get_custom_slave_dispatch(void);
 
 /**
  * @relates Trick::MonteCarlo
+ * @copydoc set_custom_slave_dispatch_pre_text
+ */
+void mc_set_custom_slave_dispatch_pre_text(int custom_slave_dispatch_pre_text);
+
+/**
+ * @relates Trick::MonteCarlo
+ * @copydoc get_custom_slave_dispatch_pre_text
+ */
+int mc_get_custom_slave_dispatch_pre_text(void);
+
+/**
+ * @relates Trick::MonteCarlo
+ * @copydoc set_custom_slave_dispatch_post_text
+ */
+void mc_set_custom_slave_dispatch_post_text(int custom_slave_dispatch_post_text);
+
+/**
+ * @relates Trick::MonteCarlo
+ * @copydoc get_custom_slave_dispatch_post_text
+ */
+int mc_get_custom_slave_dispatch_post_text(void);
+
+/**
+ * @relates Trick::MonteCarlo
  * @copydoc set_timeout
  */
 void mc_set_timeout(double timeout);

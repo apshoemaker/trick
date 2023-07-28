@@ -65,6 +65,32 @@ extern "C" int mc_get_custom_slave_dispatch(void) {
     return 0 ;
 }
 
+extern "C" void mc_set_custom_slave_dispatch_pre_text(int custom_slave_dispatch_pre_text) {
+    if ( the_mc != NULL ) {
+        the_mc->set_custom_slave_dispatch_pre_text(custom_slave_dispatch_pre_text);
+    }
+}
+
+extern "C" int mc_get_custom_slave_dispatch_pre_text(void) {
+    if ( the_mc != NULL ) {
+        return the_mc->get_custom_slave_dispatch_pre_text();
+    }
+    return 0 ;
+}
+
+extern "C" void mc_set_custom_slave_dispatch_post_text(int custom_slave_dispatch_post_text) {
+    if ( the_mc != NULL ) {
+        the_mc->set_custom_slave_dispatch_post_text(custom_slave_dispatch_post_text);
+    }
+}
+
+extern "C" int mc_get_custom_slave_dispatch_pre_text(void) {
+    if ( the_mc != NULL ) {
+        return the_mc->get_custom_slave_dispatch_pre_text();
+    }
+    return 0 ;
+}
+
 extern "C" void mc_set_timeout(double timeout) {
     if ( the_mc != NULL ) {
         the_mc->set_timeout(timeout);

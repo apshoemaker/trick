@@ -520,6 +520,26 @@ namespace Trick {
          * Gets #custom_slave_dispatch.
          */
         bool get_custom_slave_dispatch();
+        
+        /**
+         * Sets #custom_slave_dispatch_pre_text.
+         */
+        void set_custom_slave_dispatch_pre_text(bool custom_slave_dispatch_pre_text);
+
+        /**
+         * Gets #custom_slave_dispatch_pre_text.
+         */
+        bool get_custom_slave_dispatch_pre_text();
+        
+        /**
+         * Sets #custom_slave_dispatch_post_text.
+         */
+        void set_custom_slave_dispatch_post_text(bool custom_slave_dispatch_post_text);
+
+        /**
+         * Gets #custom_slave_dispatch_post_text.
+         */
+        bool get_custom_slave_dispatch_post_text();
 
         /**
          * Sets #timeout.
