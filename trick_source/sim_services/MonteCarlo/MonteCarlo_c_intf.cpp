@@ -84,9 +84,9 @@ extern "C" void mc_set_custom_slave_dispatch_post_text(int custom_slave_dispatch
     }
 }
 
-extern "C" int mc_get_custom_slave_dispatch_pre_text(void) {
+extern "C" int mc_get_custom_slave_dispatch_post_text(void) {
     if ( the_mc != NULL ) {
-        return the_mc->get_custom_slave_dispatch_pre_text();
+        return the_mc->get_custom_slave_dispatch_post_text();
     }
     return 0 ;
 }
