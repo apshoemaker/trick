@@ -329,6 +329,12 @@ namespace Trick {
          */
         bool custom_slave_dispatch;                     /**< \n trick_units(--) */
 
+        /** Indicates that you would like to override the prepended dispatch command **/
+        bool custom_slave_dispatch_pre_text;            /**< \n trick_units(--) */
+
+        /** Indicates that you would like to append some text to the dispatch command **/
+        bool custom_slave_dispatch_post_text;           /**< \n trick_units(--) */
+
         /** Maximum time to wait for a run to complete. Defaults to 120 seconds. */
         double timeout;                                 /**< \n trick_units(s) */
 
